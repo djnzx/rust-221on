@@ -94,8 +94,9 @@ fn main9() {
 }
 //10
 // Fill the blanks
-#[test]
+
 use std::ops::{Range, RangeInclusive};
+#[test]
 fn main10() {
     assert_eq!((1..5), Range{ start: 1, end: 5 });
     assert_eq!((1..=5), RangeInclusive::new(1, 5));
