@@ -1,6 +1,6 @@
 //1
 #[test]
-fn main1() {
+fn test1() {
     // Don't modify the following two lines!
     let (x, y) = (1, 2);
     let s: i32 = sum(x, y);
@@ -15,7 +15,7 @@ fn sum(x: i32, y: i32) -> i32 {
 }
 //2
 #[test]
-fn main2() {
+fn test2() {
     print();
 }
 // Replace i32 with another type
@@ -26,7 +26,7 @@ fn print(){
 // Solve it in two ways
 // DON'T let `println!` work
 #[test]
-fn main3() {
+fn test3() {
     never_return();
 
     println!("Failed!");
@@ -37,7 +37,7 @@ fn never_return() -> ! {
 }
 //4
 #[test]
-fn main4() {
+fn test4() {
     println!("Success!");
 }
 
@@ -61,7 +61,7 @@ fn never_return_fn() -> ! {
 }
 //5
 #[test]
-fn main5() {
+fn test5() {
     // FILL in the blank
     let b = false;
 
