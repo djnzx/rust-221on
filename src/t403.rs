@@ -1,7 +1,7 @@
 //1
 // Make it work with two ways
 #[test]
-fn main1() {
+fn test1() {
     let v:() = {
         let mut x = 1;
         x += 2
@@ -12,7 +12,7 @@ fn main1() {
 }
 //2
 #[test]
-fn main2() {
+fn test2() {
     let v = {
         let x = 3;
         x
@@ -23,7 +23,7 @@ fn main2() {
 }
 //3
 #[test]
-fn main3() {
+fn test3() {
     let s = sum(1 , 2);
     assert_eq!(s, 3);
 
