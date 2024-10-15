@@ -1,6 +1,6 @@
 //1
 #[test]
-fn main1() {
+fn test1() {
     let x: i32 = 5;
     // Fill the blank
     let p: &i32 = &x;
@@ -9,7 +9,7 @@ fn main1() {
 }
 //2
 #[test]
-fn main2() {
+fn test2() {
     let x: i32 = 5;
     let y: &i32= &x;
 
@@ -21,7 +21,7 @@ fn main2() {
 //3
 // Fix error
 #[test]
-fn main3() {
+fn test3() {
     let mut s: String = String::from("hello, ");
 
     borrow_object(&s);
@@ -34,7 +34,7 @@ fn borrow_object(s: &String) {}
 //4
 // Fix error
 #[test]
-fn main4() {
+fn test4() {
     let mut s: String = String::from("hello, ");
 
     push_str(&mut s);
@@ -47,7 +47,7 @@ fn push_str(s: &mut String) {
 
 //5
 #[test]
-fn main5() {
+fn test5() {
     let mut s: String = String::from("hello, ");
 
     // Fill the blank to make it work
@@ -60,7 +60,7 @@ fn main5() {
 
 //6
 #[test]
-fn main6() {
+fn test6() {
     let c: char = '中';
 
     let r1: &char = &c;
@@ -84,7 +84,7 @@ fn get_addr(r: &char) -> String {
 // Remove something to make it work
 // Don't remove a whole line !
 #[test]
-fn main7() {
+fn test7() {
     let mut s: String = String::from("hello");
 
     let r1 = &s;
@@ -99,7 +99,7 @@ fn main7() {
 
 //8
 #[test]
-fn main8() {
+fn test8() {
     // Fix error by modifying this line
     let  mut s: String = String::from("hello, ");
 
@@ -113,7 +113,7 @@ fn borrow_object1(s: &mut String) {}
 //9
 // This code has no errors!\
 #[test]
-fn main9() {
+fn test9() {
     let mut s: String = String::from("hello, ");
 
     borrow_object(&s);
@@ -128,7 +128,7 @@ fn borrow_object2(s: &String) {}
 //10
 // Comment one line to make it work
 #[test]
-fn main10() {
+fn test10() {
     let mut s: String = String::from("hello, ");
 
     let r1: &mut String = &mut s;
@@ -142,7 +142,7 @@ fn main10() {
 
 //11
 #[test]
-fn main11() {
+fn test11() {
     let mut s: String = String::from("hello, ");
 
     let r1 = &mut s;
