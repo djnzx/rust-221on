@@ -1,7 +1,7 @@
 //1
 // Remove something to make it work
 #[test]
-fn main1() {
+fn test1() {
     let x: i32 = 5;
     let mut y = 5;
     y = x;
@@ -11,7 +11,7 @@ fn main1() {
 //2
 #[test]
 // Fill the blank
-fn main2() {
+fn test2() {
     let v: u16 = 38_u8 as u16;
 
     println!("Success!");
@@ -19,7 +19,7 @@ fn main2() {
 //3
 #[test]
 // Modify `assert_eq!` to make it work
-fn main() {
+fn test3() {
     let x: u32 = 5;
     assert_eq!("u32".to_string(), type_of(&x));
 
@@ -32,7 +32,7 @@ fn type_of<T>(_: &T) -> String {
 //4
 #[test]
 // Fill the blanks to make it work
-fn main4() {
+fn test4() {
     assert_eq!(i8::MAX, 127);
     assert_eq!(u8::MAX, 255);
     println!("Success!");
@@ -40,7 +40,7 @@ fn main4() {
 //5
 #[test]
 // Fix errors and panics to make it work
-fn main5() {
+fn test5() {
     let v1:u16 = 251_u16 + 8;
     let v2:i16 = i16::checked_add(251, 8).unwrap();
     println!("{},{}",v1,v2);
@@ -48,7 +48,7 @@ fn main5() {
 //6
 #[test]
 // Modify `assert!` to make it work
-fn main6() {
+fn test6() {
     let v = 1_024 + 0xff + 0o77 + 0b1111_1111;//1024 + 255 + 63 + 255
     assert!(v == 1597);
 
@@ -57,7 +57,7 @@ fn main6() {
 //7
 #[test]
 // Fill the blank to make it work
-fn main7() {
+fn test7() {
     let x: f64= 1_000.000_1; // ?
     let y: f32 = 0.12; // f32
     let z: f64 = 0.01_f64; // f64
@@ -71,18 +71,18 @@ fn type_of1<T>(_: &T) -> String {
 
 //8
 #[test]
-fn main801() {
+fn test801() {
     assert!(0.1_f32 + 0.2_f32==0.3_f32);
     println!("Success!");
 }
 #[test]
-fn main802() {
+fn test802() {
     assert!(0.1 as f32+0.2 as f32==0.3 as f32);
     println!("Success!");
 }
 //9
 #[test]
-fn main9() {
+fn test9() {
     let mut sum = 0;
     for i in -3..2 {
         sum += i
@@ -97,7 +97,7 @@ fn main9() {
 
 use std::ops::{Range, RangeInclusive};
 #[test]
-fn main10() {
+fn test10() {
     assert_eq!((1..5), Range{ start: 1, end: 5 });
     assert_eq!((1..=5), RangeInclusive::new(1, 5));
 
@@ -106,7 +106,7 @@ fn main10() {
 //11
 // Fill the blanks and fix the errors
 #[test]
-fn main11() {
+fn test11() {
     // Integer addition
     assert!(1u32 + 2u32 == 3u32);
 
