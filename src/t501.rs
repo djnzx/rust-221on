@@ -1,6 +1,6 @@
 //1
 #[test]
-fn main1() {
+fn test1() {
     // Use as many approaches as you can to make it work
     let x: String = String::from("Hello world");
     let y: String = x.clone();
@@ -10,7 +10,7 @@ fn main1() {
 // Don't modify code in main!
 #[test]
 // Don't modify code in main!
-fn main2() {
+fn test2() {
     let s1: String = String::from("Hello world");
     let s2: String = take_ownership(s1);
 
@@ -24,7 +24,7 @@ fn take_ownership(s: String) -> String{
 }
 //3
 #[test]
-fn main3() {
+fn test3() {
     let s: String = give_ownership();
     println!("{}", s);
 }
@@ -39,7 +39,7 @@ fn give_ownership() -> String {
 //4
 // Fix the error without removing any code
 #[test]
-fn main4() {
+fn test4() {
     let s: String = String::from("Hello World");
 
     print_str(s.clone());
@@ -53,7 +53,7 @@ fn print_str(s: String) {
 //5
 // Don't use clone ,use copy instead
 #[test]
-fn main5() {
+fn test5() {
     let x:(i32, i32, (), &str) = (1, 2, (), "hello");
     let y:(i32, i32, (), &str) = x;
     println!("{:?}, {:?}", x, y);
@@ -62,7 +62,7 @@ fn main5() {
 //6
 // make the necessary variable mutable
 #[test]
-fn main6() {
+fn test6() {
     let s: String = String::from("Hello ");
 
     let mut s1 = s;
@@ -74,7 +74,7 @@ fn main6() {
 
 //7
 #[test]
-fn main7() {
+fn test7() {
     let x: Box<i32> = Box::new(5);
 
     let mut y: Box<i32> = Box::new(1);      // update this line, don't change other lines!
@@ -88,7 +88,7 @@ fn main7() {
 
 //приклад
 #[test]
-fn main0() {
+fn test0() {
     #[derive(Debug)]
     struct Person {
         name: String,
@@ -116,7 +116,7 @@ fn main0() {
 
 //8
 #[test]
-fn main8() {
+fn test8() {
     let t: (String, String) = (String::from("hello"), String::from("world"));
 
     let _s: String = t.0;
@@ -127,7 +127,7 @@ fn main8() {
 
 //9
 #[test]
-fn main9() {
+fn test9() {
     let t: (String, String) = (String::from("hello"), String::from("world"));
 
     // Fill the blanks
