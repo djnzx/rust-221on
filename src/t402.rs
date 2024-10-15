@@ -2,7 +2,7 @@
 // Make it work
 #[test]
 use std::mem::size_of_val;
-fn main1() {
+fn test1() {
     let c1: char = 'a';//4 байта
     assert_eq!(size_of_val(&c1),4);
 
@@ -14,7 +14,7 @@ fn main1() {
 //2
 // Make it work
 #[test]
-fn main2() {
+fn test2() {
     let c1: char = '中';
     print_char(c1);
 }
@@ -24,7 +24,7 @@ fn print_char(c : char) {
 //3
 // Make println! work
 #[test]
-fn main3() {
+fn test3() {
     let _f: bool = false;
 
     let t: bool = true;
@@ -35,7 +35,7 @@ fn main3() {
 //4
 // Make it work
 #[test]
-fn main4() {
+fn test4() {
     let f:bool = false;
     let t:bool = true && false;//false
     assert_eq!(t, f);
@@ -45,7 +45,7 @@ fn main4() {
 //5
 // Make it work, don't modify `implicitly_ret_unit` !
 #[test]
-fn main5() {
+fn test5() {
     let _v: () = ();
 
     let v:(i32, i32) = (2, 3);
@@ -66,7 +66,7 @@ fn explicitly_ret_unit() -> () {
 // Modify `4` in assert to make it work
 #[test]
 //use std::mem::size_of_val;
-fn main6() {
+fn test6() {
     let unit: () = ();
     assert!(size_of_val(&unit) == 0);
 
